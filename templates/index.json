@@ -1,18 +1,17 @@
 {
   "sections": {
-    "2283714a-7aeb-48fd-9931-22b17a484d15": {
-      "type": "rich-text",
+    "e0954225-abc1-447a-bc00-c8614302ecbf": {
+      "type": "custom-banner",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "background_image": "shopify:\/\/shop_images\/Robot_Garage_16x9-29_1.png",
+        "heading": "Inspiring the Innovators of Tomorrow",
+        "subtitle": "Three projects each month with full length instructional videos!",
+        "btn-text": "Subscribe Now!",
+        "btn-url": "shopify:\/\/products\/example-t-shirt"
       }
     }
   },
   "order": [
-    "2283714a-7aeb-48fd-9931-22b17a484d15"
+    "e0954225-abc1-447a-bc00-c8614302ecbf"
   ]
 }

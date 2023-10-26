@@ -1,3 +1,7 @@
+/* Global CSS */
+.btn-red {
+    background-color: #D92515;
+}
 /* Banner Section css */
 
 .hero-image {
@@ -7,14 +11,39 @@
     background-size: cover;
     position: relative;
 }
-.button-outline {
-    width: fit-content;
-    outline: 1px solid;
-    transform-style: preserve-3d;
+.banner-box {
+    background-color: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(3px);
 }
-.btn {
-    transform: translateZ(-10px);
+.shadow-wrapper {
+    display: flex;
     position: relative;
-    top: 5px;
-    left: 5px;
+    width: fit-content;
+}
+.shadow-wrapper .btn {
+    z-index:1;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 4px;
+    right: 3px;
+    transition: all .1s linear;
+}
+.shadow {
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+.btn:hover, .btn:first-child:active {
+    background-color: transparent;
+    border-color: #fff;
+}
+.shadow-wrapper:hover .btn {
+    bottom: 0;
+    right: 0;
+    transition: all .1s linear;
 }

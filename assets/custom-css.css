@@ -1,0 +1,20 @@
+/* Banner Section css */
+
+.hero-image {
+    min-height: 510px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.button-outline {
+    width: fit-content;
+    outline: 1px solid;
+    transform-style: preserve-3d;
+}
+.btn {
+    transform: translateZ(-10px);
+    position: relative;
+    top: 5px;
+    left: 5px;
+}

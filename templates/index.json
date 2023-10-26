@@ -9,9 +9,50 @@
         "btn-text": "Subscribe Now!",
         "btn-url": "shopify:\/\/products\/example-t-shirt"
       }
+    },
+    "0d04fc62-a8bc-45de-8772-03753e1da479": {
+      "type": "subscription",
+      "blocks": {
+        "aceae2d8-674b-4efb-87e2-560c3662e242": {
+          "type": "left-side",
+          "settings": {
+            "small_text1": "",
+            "text1": "",
+            "small_text2": "",
+            "text2": "",
+            "small_text3": "",
+            "text3": ""
+          }
+        },
+        "32166d7a-e5cd-4a92-a99f-82ded4843e69": {
+          "type": "right-side",
+          "settings": {
+            "small_text1": "",
+            "text1": "",
+            "small_text2": "",
+            "text2": "",
+            "small_text3": "",
+            "text3": ""
+          }
+        }
+      },
+      "block_order": [
+        "aceae2d8-674b-4efb-87e2-560c3662e242",
+        "32166d7a-e5cd-4a92-a99f-82ded4843e69"
+      ],
+      "settings": {
+        "heading": "How It Works",
+        "left_sub_heading": "Subscriptions",
+        "left_btn_text": "Get Started",
+        "left_btn_url": "shopify:\/\/products\/example-t-shirt",
+        "right_sub_heading": "In-Person",
+        "right_btn_text": "Enroll Now",
+        "right_btn_url": "shopify:\/\/products\/example-t-shirt"
+      }
     }
   },
   "order": [
-    "e0954225-abc1-447a-bc00-c8614302ecbf"
+    "e0954225-abc1-447a-bc00-c8614302ecbf",
+    "0d04fc62-a8bc-45de-8772-03753e1da479"
   ]
 }

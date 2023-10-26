@@ -16,23 +16,29 @@
         "aceae2d8-674b-4efb-87e2-560c3662e242": {
           "type": "left-side",
           "settings": {
-            "small_text1": "",
-            "text1": "",
-            "small_text2": "",
-            "text2": "",
-            "small_text3": "",
-            "text3": ""
+            "image1": "shopify:\/\/shop_images\/Group_1501.svg",
+            "small_text1": "Step 1",
+            "text1": "Chose Your Subscription Plan",
+            "image2": "shopify:\/\/shop_images\/Group_1502.svg",
+            "small_text2": "Step 2",
+            "text2": "Scedule a Delivery",
+            "image3": "shopify:\/\/shop_images\/Group_1474.svg",
+            "small_text3": "Step 3",
+            "text3": "Build, Learn and Have Fun at Home!"
           }
         },
         "32166d7a-e5cd-4a92-a99f-82ded4843e69": {
           "type": "right-side",
           "settings": {
-            "small_text1": "",
-            "text1": "",
-            "small_text2": "",
-            "text2": "",
-            "small_text3": "",
-            "text3": ""
+            "image1": "shopify:\/\/shop_images\/Group_1503.svg",
+            "small_text1": "Step 1",
+            "text1": "Choose Your Activity",
+            "image2": "shopify:\/\/shop_images\/Group_1504.svg",
+            "small_text2": "Step 2",
+            "text2": "Register Online",
+            "image3": "shopify:\/\/shop_images\/Group_1505.svg",
+            "small_text3": "Step 3",
+            "text3": "Build, Learn and Have Fun at The Robot Garage"
           }
         }
       },

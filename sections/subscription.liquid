@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-6">
                     {% for block in rightSideBlocks %}
-                        <h3>{{block.settings.right_sub_heading}}</h3>
+                        <h3>{{section.settings.right_sub_heading}}</h3>
                         <div class="row">
                             <div class="col-4">
                                 <img src="{{block.settings.image1 | image_url }}" alt="Image One">
@@ -48,7 +48,7 @@
                                 <p>{{block.settings.text3}}</p>
                             </div>
                         </div>
-                        <a href="{{block.settings.right_btn_url}}">{{block.settings.right_btn_text}}</a>
+                        <a href="{{section.settings.right_btn_url}}">{{section.settings.right_btn_text}}</a>
                     {% endfor %}
                 </div>
             </div>

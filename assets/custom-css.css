@@ -2,6 +2,12 @@
 .btn-red {
     background-color: #D92515;
 }
+.btn-green {
+    background-color: #BFCE17;
+}
+.btn-yellow {
+    background-color: #FED408;
+}
 /* Banner Section css */
 
 .hero-image {
@@ -46,4 +52,28 @@
     bottom: 0;
     right: 0;
     transition: all .1s linear;
+}
+
+/* Subscription Section Css */
+.subscription-boxes .btn {
+    color: #000;
+}
+.subscription-boxes .btn:hover {
+    border-color: #000;
+}
+.box-bg {
+    background-color: #FDFFEA;
+    box-shadow: 12px 12px 0 1px white, 12px 12px 0 3px #929293;
+}
+.subscription-icons {
+    max-width: 120px;
+    max-height: 120px;
+}
+.text-green {
+    color: #BFCE17;
+    font-weight: 500;
+}
+.text-yellow {
+    color: #FED408;
+    font-weight: 500;
 }

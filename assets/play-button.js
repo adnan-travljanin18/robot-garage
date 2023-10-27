@@ -7,14 +7,16 @@ playButton.addEventListener("click", function () {
         playButton.style.display = "none";
     } else {
         video.pause();
-        playButton.style.removeProperty("display"); // Remove the display property
+        playButton.style.display = "flex";
     }
 });
 
-video.addEventListener("play", function () {
-    playButton.style.display = "none";
-});
-
-video.addEventListener("pause", function () {
-    playButton.style.removeProperty("display"); // Remove the display property
+video.addEventListener("click", function () {
+    if (video.paused) {
+        video.play();
+        playButton.style.display = "none";
+    } else {
+        video.pause();
+        playButton.style.display = "flex";
+    }
 });

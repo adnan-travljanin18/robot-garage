@@ -1,4 +1,5 @@
 /* Global CSS */
+
 .btn-red {
     background-color: #D92515;
 }
@@ -8,6 +9,7 @@
 .btn-yellow {
     background-color: #FED408;
 }
+
 /* Banner Section css */
 
 .hero-image {
@@ -55,6 +57,7 @@
 }
 
 /* Subscription Section Css */
+
 .subscription-boxes .btn {
     color: #000;
 }

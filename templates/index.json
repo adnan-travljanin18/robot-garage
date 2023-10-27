@@ -55,10 +55,21 @@
         "right_btn_text": "Enroll Now",
         "right_btn_url": "shopify:\/\/products\/example-t-shirt"
       }
+    },
+    "45b36e5d-4265-4cb6-8e1c-210e1068caca": {
+      "type": "custom-video-with-text",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/About Us Final_1.mp4",
+        "heading": "We’ve inspired over 100,000 students",
+        "subtext": "We’ve inspired over 100,000 students",
+        "btn_text": "About Us",
+        "btn_url": "shopify:\/\/products\/example-t-shirt"
+      }
     }
   },
   "order": [
     "e0954225-abc1-447a-bc00-c8614302ecbf",
-    "0d04fc62-a8bc-45de-8772-03753e1da479"
+    "0d04fc62-a8bc-45de-8772-03753e1da479",
+    "45b36e5d-4265-4cb6-8e1c-210e1068caca"
   ]
 }

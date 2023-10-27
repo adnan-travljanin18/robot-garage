@@ -1,12 +1,60 @@
-<section>
+{% assign additional_class = "" %}
+
+<section class="py-5">
     <div class="container">
         <div class="row">
-            <img>
-            <div>
-                <h3></h3>
-                <p></p>
-
+            <video muted controls class="col-8">
+                <source src="{{ section.settings.video.sources[1].url }}">
+            </video>
+            <div class="col-4">
+                <h3>{{ section.settings.heading }}</h3>
+                <p>{{ section.settings.subtext }}</p>
+                {% render 'button' with additional_class: 'btn-yellow', btn-url: section.settings.btn_url, btn-text: section.settings.btn_text %}
             </div>
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+  "name": "Custom Image with Text",
+  "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video",
+      "info": "Add Video Here"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "info": "Add Title Here"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Description",
+      "info": "Add Description Here"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "info": "Add Button Text here"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button Url",
+      "info": "Add Button Url Here"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image with Text",
+      "name": "Custom Image with Text"
+    }
+  ]
+}
+{% endschema %}

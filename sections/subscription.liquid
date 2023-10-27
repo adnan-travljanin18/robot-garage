@@ -4,65 +4,69 @@
     <div class="container">
         <div class="text-center">
             <h2 class="h1 pb-5 m-0">{{ section.settings.heading }}</h2>
-            <div class="row justify-content-center gap-5">
+            <div class="row justify-content-center gap-5 gap-lg-0">
                 {% assign leftSideBlocks = section.blocks | where: "type", "left-side" %}
                 {% assign rightSideBlocks = section.blocks | where: "type", "right-side" %}
-                <div class="col-11 col-sm-12 col-md-5 d-flex flex-column align-items-center justify-content-between gap-4 py-4 px-3 box-bg">
+                <div class="col-11 col-sm-12 col-lg-6">
                     {% for block in leftSideBlocks %}
-                        <h3>{{ section.settings.left_sub_heading }}</h3>
-                        <div class="row">
-                            <div class="col-4 d-flex flex-column align-items-center gap-2">
-                                <div class="subscription-icons">
-                                    <img src="{{ block.settings.image1 | image_url }}" alt="Image One" class="w-100 h-100 ratio ratio-1x1">
+                        <div class="d-flex flex-column align-items-center justify-content-between gap-4 py-4 px-3 box-bg">
+                            <h3>{{ section.settings.left_sub_heading }}</h3>
+                            <div class="row">
+                                <div class="col-4 d-flex flex-column align-items-center gap-2">
+                                    <div class="subscription-icons">
+                                        <img src="{{ block.settings.image1 | image_url }}" alt="Image One" class="w-100 h-100 ratio ratio-1x1">
+                                    </div>
+                                    <small class="text-uppercase text-green">{{ block.settings.small_text1 }}</small>
+                                    <p>{{ block.settings.text1 }}</p>
                                 </div>
-                                <small class="text-uppercase text-green">{{ block.settings.small_text1 }}</small>
-                                <p>{{ block.settings.text1 }}</p>
-                            </div>
-                            <div class="col-4 d-flex flex-column align-items-center gap-2">
-                                <div class="subscription-icons">
-                                    <img src="{{ block.settings.image2 | image_url }}" alt="Image Two" class="w-100 h-100 ratio ratio-1x1">
+                                <div class="col-4 d-flex flex-column align-items-center gap-2">
+                                    <div class="subscription-icons">
+                                        <img src="{{ block.settings.image2 | image_url }}" alt="Image Two" class="w-100 h-100 ratio ratio-1x1">
+                                    </div>
+                                    <small class="text-uppercase text-green">{{ block.settings.small_text2 }}</small>
+                                    <p>{{ block.settings.text2 }}</p>
                                 </div>
-                                <small class="text-uppercase text-green">{{ block.settings.small_text2 }}</small>
-                                <p>{{ block.settings.text2 }}</p>
-                            </div>
-                            <div class="col-4 d-flex flex-column align-items-center gap-2">
-                                <div class="subscription-icons">
-                                    <img src="{{ block.settings.image3 | image_url }}" alt="Image Three" class="w-100 h-100 ratio ratio-1x1">
+                                <div class="col-4 d-flex flex-column align-items-center gap-2">
+                                    <div class="subscription-icons">
+                                        <img src="{{ block.settings.image3 | image_url }}" alt="Image Three" class="w-100 h-100 ratio ratio-1x1">
+                                    </div>
+                                    <small class="text-uppercase text-green">{{ block.settings.small_text3 }}</small>
+                                    <p>{{ block.settings.text3 }}</p>
                                 </div>
-                                <small class="text-uppercase text-green">{{ block.settings.small_text3 }}</small>
-                                <p>{{ block.settings.text3 }}</p>
                             </div>
+                            {% render 'button' with additional_class: 'btn-green', btn-url: section.settings.left_btn_url, btn-text: section.settings.left_btn_text %}
                         </div>
-                        {% render 'button' with additional_class: 'btn-green', btn-url: section.settings.left_btn_url, btn-text: section.settings.left_btn_text %}
                     {% endfor %}
                 </div>
-                <div class="col-11 col-sm-12 col-md-5 d-flex flex-column align-items-center justify-content-between gap-4 py-4 px-3 box-bg">
+                <div class="col-11 col-sm-12 col-lg-6">
                     {% for block in rightSideBlocks %}
-                        <h3>{{ section.settings.right_sub_heading }}</h3>
-                        <div class="row">
-                            <div class="col-4 d-flex flex-column align-items-center gap-2">
-                                <div class="subscription-icons">
-                                    <img src="{{ block.settings.image1 | image_url }}" alt="Image One" class="w-100 h-100 ratio ratio-1x1">
+                        <div class="d-flex flex-column align-items-center justify-content-between gap-4 py-4 px-3 box-bg">
+                            <h3>{{ section.settings.right_sub_heading }}</h3>
+                            <div class="row">
+                                <div class="col-4 d-flex flex-column align-items-center gap-2">
+                                    <div class="subscription-icons">
+                                        <img src="{{ block.settings.image1 | image_url }}" alt="Image One" class="w-100 h-100 ratio ratio-1x1">
+                                    </div>
+                                    <small class="text-uppercase text-yellow">{{ block.settings.small_text1 }}</small>
+                                    <p>{{ block.settings.text1 }}</p>
                                 </div>
-                                <small class="text-uppercase text-yellow">{{ block.settings.small_text1 }}</small>
-                                <p>{{ block.settings.text1 }}</p>
-                            </div>
-                            <div class="col-4 d-flex flex-column align-items-center gap-2">
-                                <div class="subscription-icons">
-                                    <img src="{{ block.settings.image2 | image_url }}" alt="Image Two" class="w-100 h-100 ratio ratio-1x1">
+                                <div class="col-4 d-flex flex-column align-items-center gap-2">
+                                    <div class="subscription-icons">
+                                        <img src="{{ block.settings.image2 | image_url }}" alt="Image Two" class="w-100 h-100 ratio ratio-1x1">
+                                    </div>
+                                    <small class="text-uppercase text-yellow">{{ block.settings.small_text2 }}</small>
+                                    <p>{{ block.settings.text2 }}</p>
                                 </div>
-                                <small class="text-uppercase text-yellow">{{ block.settings.small_text2 }}</small>
-                                <p>{{ block.settings.text2 }}</p>
-                            </div>
-                            <div class="col-4 d-flex flex-column align-items-center gap-2">
-                                <div class="subscription-icons">
-                                    <img src="{{ block.settings.image3 | image_url }}" alt="Image Three" class="w-100 h-100 ratio ratio-1x1">
+                                <div class="col-4 d-flex flex-column align-items-center gap-2">
+                                    <div class="subscription-icons">
+                                        <img src="{{ block.settings.image3 | image_url }}" alt="Image Three" class="w-100 h-100 ratio ratio-1x1">
+                                    </div>
+                                    <small class="text-uppercase text-yellow">{{ block.settings.small_text3 }}</small>
+                                    <p>{{ block.settings.text3 }}</p>
                                 </div>
-                                <small class="text-uppercase text-yellow">{{ block.settings.small_text3 }}</small>
-                                <p>{{ block.settings.text3 }}</p>
                             </div>
+                            {% render 'button' with additional_class: 'btn-yellow', btn-url: section.settings.right_btn_url, btn-text: section.settings.right_btn_text %}
                         </div>
-                        {% render 'button' with additional_class: 'btn-yellow', btn-url: section.settings.right_btn_url, btn-text: section.settings.right_btn_text %}
                     {% endfor %}
                 </div>
             </div>

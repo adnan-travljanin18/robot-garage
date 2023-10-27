@@ -2,11 +2,14 @@
 
 <section class="py-5">
     <div class="container">
-        <div class="row">
-            <video muted controls class="col-8">
-                <source src="{{ section.settings.video.sources[1].url }}">
+        <div class="row align-items-center gap-5 gap-lg-0 py-3 bg-image">
+          <div class="col-12 col-lg-8 position-relative">
+            <video muted controls id="video" class="w-100">
+              <source src="{{ section.settings.video.sources[1].url }}">
             </video>
-            <div class="col-4">
+            <div id="play-button" class="justify-content-center align-items-center gap-2 border border-1 position-absolute top-50 start-50 translate-middle"><i class="fa-solid fa-video"></i><p class="m-0">Play Video</p></div>
+          </div>
+            <div class="col-12 col-lg-4 text-center text-lg-start d-flex d-lg-block align-items-center flex-column">
                 <h3>{{ section.settings.heading }}</h3>
                 <p>{{ section.settings.subtext }}</p>
                 {% render 'button' with additional_class: 'btn-yellow', btn-url: section.settings.btn_url, btn-text: section.settings.btn_text %}
@@ -15,9 +18,12 @@
     </div>
 </section>
 
+<script defer src="{{ 'play-button.js' | asset_url }}"></script>
+
+
 {% schema %}
 {
-  "name": "Custom Image with Text",
+  "name": "Custom Video with Text",
   "settings": [
     {
       "type": "video",
@@ -53,7 +59,7 @@
   "presets": [
     {
       "category": "Image with Text",
-      "name": "Custom Image with Text"
+      "name": "Custom Video with Text"
     }
   ]
 }

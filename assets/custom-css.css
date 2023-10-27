@@ -77,3 +77,31 @@
     color: #FED408;
     font-weight: 500;
 }
+
+/* Video with Text Section Css */
+
+.bg-image {
+    background: url('https://cdn.shopify.com/s/files/1/0833/1794/8730/files/Mask_Group_13.svg?v=1698415946') no-repeat;
+    background-position: bottom -80px right;
+}
+#play-button {
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+}
+#play-button:hover {
+    background-color: #000;
+}
+@media screen and (min-width:1200px) {
+    .bg-image {
+        background-position: bottom -50px right;
+    }
+}
+@media screen and (min-width:1400px) {
+    .bg-image {
+        background-position: bottom -20px right;
+    }
+}

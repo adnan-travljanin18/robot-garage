@@ -10,6 +10,13 @@
     background-color: #FED408;
 }
 
+.subscription-boxes .btn, .bg-image .btn {
+    color: #000;
+}
+.subscription-boxes .btn:hover, .bg-image .btn:hover {
+    border-color: #000;
+}
+
 /* Banner Section css */
 
 .hero-image {
@@ -58,12 +65,6 @@
 
 /* Subscription Section Css */
 
-.subscription-boxes .btn {
-    color: #000;
-}
-.subscription-boxes .btn:hover {
-    border-color: #000;
-}
 .box-bg {
     background-color: #FDFFEA;
     box-shadow: 12px 12px 0 1px white, 12px 12px 0 3px #929293;
@@ -73,11 +74,11 @@
     max-height: 120px;
 }
 .text-green {
-    color: #BFCE17;
+    color: #598B29;
     font-weight: 500;
 }
 .text-yellow {
-    color: #FED408;
+    color: #D59C04;
     font-weight: 500;
 }
 
@@ -94,9 +95,11 @@
     border-radius: 50px;
     cursor: pointer;
     display: flex;
+    transition: all 0.2s ease-in;
 }
 #play-button:hover {
     background-color: #000;
+    transition: all 0.2s ease-in;
 }
 @media screen and (min-width:1200px) {
     .bg-image {
